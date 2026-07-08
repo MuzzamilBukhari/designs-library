@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { Search, MessageCircle } from "lucide-react";
 
 interface NavLink {
@@ -157,21 +156,4 @@ export default function HeroSection({
   );
 }
 
-HeroSection.propTypes = {
-  backgroundImage: PropTypes.string.isRequired,
-  logoText: PropTypes.string.isRequired,
-  navLinks: PropTypes.arrayOf(
-    PropTypes.shape({
-      href: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-  avatarSrcList: PropTypes.arrayOf(PropTypes.string).isRequired,
-  userCount: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired,
-  ctaText: PropTypes.string.isRequired,
-  onSubmit: PropTypes.func.isRequired,
-  footerVersion: PropTypes.string.isRequired,
-};
+
