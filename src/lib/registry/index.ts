@@ -183,5 +183,47 @@ export const sections: Record<string, SectionRegistryEntry> = {
     description: "A dark futuristic hero section with user avatars and a waitlist form.",
     category: "demo",
     component: dynamic(() => import('@/components/sections/demo/HeroSection1Demo')),
+  },
+  "aether-flow-hero-demo": {
+    id: "aether-flow-hero-demo",
+    name: "Aether Flow Hero Demo",
+    description: "An adaptive framework for fluid digital experiences with particles.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo/AetherFlowHeroDemo')),
+  },
+  "interactive-robot-spline-demo": {
+    id: "interactive-robot-spline-demo",
+    name: "Interactive Robot Spline Demo",
+    description: "An interactive 3D robot scene using Spline.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo/InteractiveRobotSplineDemo')),
+  },
+  "gradient-dots-demo": {
+    id: "gradient-dots-demo",
+    name: "Gradient Dots Demo",
+    description: "Animated background layer with gradient hex dots and hue shifting.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo/GradientDotsDemo')),
+  },
+  "turing-landing-demo": {
+    id: "turing-landing-demo",
+    name: "Turing Landing Demo",
+    description: "A flagship hero landing element with immersive background video.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo/TuringLandingDemo')),
+  },
+  "cybernetic-grid-shader-demo": {
+    id: "cybernetic-grid-shader-demo",
+    name: "Cybernetic Grid Shader Demo",
+    description: "An interactive WebGL background shader reacting to mouse movement.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo/CyberneticGridShaderDemo')),
+  },
+  "typewriter-demo": {
+    id: "typewriter-demo",
+    name: "Typewriter Demo",
+    description: "A typewriter effect rotating through strings sequentially.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo/TypewriterDemo')),
   }
 };
