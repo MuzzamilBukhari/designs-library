@@ -225,5 +225,26 @@ export const sections: Record<string, SectionRegistryEntry> = {
     description: "A typewriter effect rotating through strings sequentially.",
     category: "demo",
     component: dynamic(() => import('@/components/sections/demo/TypewriterDemo')),
+  },
+  "modern-animated-multi-words-demo": {
+    id: "modern-animated-multi-words-demo",
+    name: "Modern Animated Multi Words Demo",
+    description: "A modern animated multi words component with glowing backgrounds.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo/ModernAnimatedMultiWordsDemo')),
+  },
+  "holographic-card-demo": {
+    id: "holographic-card-demo",
+    name: "Holographic Card Demo",
+    description: "An interactive holographic card that reacts to mouse movement.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo/HolographicCardDemo')),
+  },
+  "cover-demo": {
+    id: "cover-demo",
+    name: "Cover Demo",
+    description: "A text cover component with animated particle beams on hover.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo/CoverDemo')),
   }
 };
