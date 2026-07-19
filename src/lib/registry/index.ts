@@ -358,5 +358,47 @@ export const sections: Record<string, SectionRegistryEntry> = {
     description: "A slick, buttery smooth iOS-style scrolling chapter rail.",
     category: "demo",
     component: dynamic(() => import('@/components/sections/demo/chapter-scrubber-demo').then((m) => m.ChapterScrubberDemo)),
+  },
+  "interactive-3d-robot-demo": {
+    id: "interactive-3d-robot-demo",
+    name: "Interactive 3D Robot Demo",
+    description: "An interactive 3D robot scene using Spline.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo').then((m) => m.Section)),
+  },
+  "aether-flow-demo": {
+    id: "aether-flow-demo",
+    name: "Aether Flow Demo",
+    description: "A highly customizable WebGL shader background with controls.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo-aether')),
+  },
+  "anime-navbar-demo": {
+    id: "anime-navbar-demo",
+    name: "Anime Navbar Demo",
+    description: "An animated navigation bar with magical Framer Motion hover states.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo-anime-navbar').then((m) => m.AnimeNavBarDemo)),
+  },
+  "expandable-card-demo": {
+    id: "expandable-card-demo",
+    name: "Expandable Card Demo",
+    description: "A card that expands into a full-screen detailed view overlay.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo-expandable-card')),
+  },
+  "hero-designali-demo": {
+    id: "hero-designali-demo",
+    name: "Hero Designali Demo",
+    description: "An incredibly rich hero section with particle lines and shine borders.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo-hero-designali')),
+  },
+  "text-roll-demo": {
+    id: "text-roll-demo",
+    name: "Text Roll Demo",
+    description: "A staggered text character hover animation ideal for nav links.",
+    category: "demo",
+    component: dynamic(() => import('@/components/sections/demo-text-roll')),
   }
 };

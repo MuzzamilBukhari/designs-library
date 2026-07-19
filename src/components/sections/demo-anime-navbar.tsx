@@ -1,0 +1,43 @@
+"use client"
+
+import * as React from "react"
+import { Home, FileText, CreditCard, Info } from "lucide-react"
+import { AnimeNavBar } from "@/components/ui/anime-navbar"
+
+const items = [
+  {
+    name: "Home",
+    url: "#",
+    href: "#",
+    icon: Home,
+  },
+  {
+    name: "Convert",
+    url: "#",
+    href: "#",
+    icon: FileText,
+  },
+  {
+    name: "Pricing",
+    url: "#",
+    href: "#",
+    icon: CreditCard,
+  },
+  {
+    name: "About",
+    url: "#",
+    href: "#",
+    icon: Info,
+  },
+]
+
+export function AnimeNavBarDemo() {
+  return (
+    <div className="relative h-screen w-full bg-neutral-900 pt-32">
+      <AnimeNavBar items={items} defaultActive="Home" />
+      <div className="text-center text-white/50">
+        <p>Anime Navigation Bar Demo</p>
+      </div>
+    </div>
+  )
+}
