@@ -48,6 +48,7 @@ Line.prototype = {
     // @ts-ignore
     this.nodes = [];
     for (var t, n = 0; n < E.size; n++) {
+      // @ts-ignore
       t = new Node();
       // @ts-ignore
       t.x = pos.x;
@@ -124,8 +125,10 @@ Line.prototype = {
 function onMousemove(e) {
   function o() {
     lines = [];
-    for (let e = 0; e < E.trails; e++)
+    for (let e = 0; e < E.trails; e++) {
+      // @ts-ignore
       lines.push(new Line({ spring: 0.45 + (e / E.trails) * 0.025 }));
+    }
   }
   // @ts-ignore
   function c(e) {
@@ -188,7 +191,7 @@ var ctx,
   // @ts-ignore
   f,
   e = 0,
-  pos = {},
+  pos: any = {},
   // @ts-ignore
   lines = [],
   E = {
@@ -217,6 +220,7 @@ const renderCanvas = function () {
   ctx.running = true;
   // @ts-ignore
   ctx.frame = 1;
+  // @ts-ignore
   f = new n({
     phase: Math.random() * 2 * Math.PI,
     amplitude: 85,
